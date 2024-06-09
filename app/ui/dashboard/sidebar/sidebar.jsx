@@ -26,12 +26,12 @@ const adminMenuItems = [
         icon: <MdDashboard />,
       },
       {
-        title: "Users",
+        title: "Students",
         path: "/dashboard/users",
         icon: <MdSupervisedUserCircle />,
       },
       {
-        title: "Products",
+        title: "Teachers",
         path: "/dashboard/products",
         icon: <MdShoppingBag />,
       },
@@ -42,26 +42,26 @@ const adminMenuItems = [
       },
     ],
   },
-  {
-    title: "Analytics",
-    list: [
-      {
-        title: "Revenue",
-        path: "/dashboard/revenue",
-        icon: <MdWork />,
-      },
-      {
-        title: "Reports",
-        path: "/dashboard/reports",
-        icon: <MdAnalytics />,
-      },
-      {
-        title: "Teams",
-        path: "/dashboard/teams",
-        icon: <MdPeople />,
-      },
-    ],
-  },
+  // {
+  //   title: "Analytics",
+  //   list: [
+  //     {
+  //       title: "Revenue",
+  //       path: "/dashboard/revenue",
+  //       icon: <MdWork />,
+  //     },
+  //     {
+  //       title: "Reports",
+  //       path: "/dashboard/reports",
+  //       icon: <MdAnalytics />,
+  //     },
+  //     {
+  //       title: "Teams",
+  //       path: "/dashboard/teams",
+  //       icon: <MdPeople />,
+  //     },
+  //   ],
+  // },
   {
     title: "User",
     list: [

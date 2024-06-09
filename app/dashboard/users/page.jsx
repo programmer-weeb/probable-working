@@ -25,8 +25,8 @@ const UsersPage = async ({ searchParams }) => {
             <td>Name</td>
             <td>Email</td>
             <td>Created At</td>
-            <td>Role</td>
-            <td>Status</td>
+            {/* <td>Role</td>
+            <td>Status</td> */}
             <td>Action</td>
           </tr>
         </thead>
@@ -47,10 +47,15 @@ const UsersPage = async ({ searchParams }) => {
               </td>
               <td>{user.email}</td>
               <td>{user.createdAt?.toString().slice(4, 16)}</td>
-              <td>{user.isAdmin ? "Admin" : "Client"}</td>
-              <td>{user.isActive ? "active" : "passive"}</td>
+              {/* <td>{user.isAdmin ? "Admin" : "Client"}</td> */}
+              {/* <td>{user.isActive ? "active" : "passive"}</td> */}
               <td>
                 <div className={styles.buttons}>
+                  <Link href={`/dashboard/users/edit/${user.id}`}>
+                    <button className={`${styles.button} ${styles.view}`}>
+                      Edit
+                    </button>
+                  </Link>
                   <Link href={`/dashboard/users/${user.id}`}>
                     <button className={`${styles.button} ${styles.view}`}>
                       View
