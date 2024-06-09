@@ -16,7 +16,7 @@ import {
 } from "react-icons/md";
 import { auth, signOut } from "@/app/auth";
 
-const menuItems = [
+const adminMenuItems = [
   {
     title: "Pages",
     list: [
@@ -100,9 +100,9 @@ const Sidebar = async () => {
         </div>
       </div>
       <ul className={styles.list}>
-        {menuItems.map((cat) => (
+        {adminMenuItems.map((cat) => (
           <li key={cat.title}>
-            <span className={styles.cat}>{cat.title}</span>
+            {/* <span className={styles.cat}>{cat.title}</span> */}
             {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}
